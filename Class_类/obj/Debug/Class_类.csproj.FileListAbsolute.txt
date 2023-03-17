@@ -1,0 +1,16 @@
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\Class_类.dll
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\Class_类.pdb
+E:\下载1\VP\练习软件\Class_类\Class_类\obj\Debug\Class_类.csproj.AssemblyReference.cache
+E:\下载1\VP\练习软件\Class_类\Class_类\obj\Debug\Class_类.csproj.CoreCompileInputs.cache
+E:\下载1\VP\练习软件\Class_类\Class_类\obj\Debug\Class_类.dll
+E:\下载1\VP\练习软件\Class_类\Class_类\obj\Debug\Class_类.pdb
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\Newtonsoft.Json.dll
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\Newtonsoft.Json.xml
+E:\下载1\VP\练习软件\Class_类\Class_类\obj\Debug\Class_类.csproj.CopyComplete
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\BouncyCastle.Crypto.dll
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\ExcelDataReader.dll
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\itextsharp.dll
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\ExcelDataReader.pdb
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\ExcelDataReader.xml
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\itextsharp.xml
+E:\下载1\VP\练习软件\Class_类\Class_类\bin\Debug\Class_类.xml

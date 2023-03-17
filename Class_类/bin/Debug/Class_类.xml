@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Class_类</name>
+    </assembly>
+    <members>
+        <member name="T:Class_类.ConfigHelper">
+            <summary>
+            用于读取和写入应用程序配置文件的帮助类
+            </summary>
+        </member>
+        <member name="M:Class_类.ConfigHelper.Read(System.String)">
+            <summary>
+            读取指定配置项的值
+            </summary>
+            <param name="key">配置项的名称</param>
+            <returns>配置项的值</returns>
+        </member>
+        <member name="M:Class_类.ConfigHelper.Write(System.String,System.String)">
+            <summary>
+            写入指定配置项的值
+            </summary>
+            <param name="key">配置项的名称</param>
+            <param name="value">配置项的值</param>
+        </member>
+        <member name="T:Class_类.DgvHelper">
+            <summary>
+            DataGridView相关的类
+            </summary>
+        </member>
+        <member name="M:Class_类.DgvHelper.SetRowHeadNum(System.Windows.Forms.DataGridView)">
+            <summary>
+            设置 DataGridView 添加 RowHead 序号
+            </summary>
+            <param name="myDGV"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.SetRowWid(System.Windows.Forms.DataGridView)">
+            <summary>
+            设置 DataGridView 的行号宽度
+            </summary>
+            <param name="myDGV"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.SetRowsReadOnly(System.Windows.Forms.DataGridView)">
+            <summary>
+            DataGridView 将每个行设为只读
+            </summary>
+            <param name="myDGV"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.SetBanMaXian(System.Windows.Forms.DataGridView,System.Boolean)">
+            <summary>
+            将奇偶行设成 斑马线
+            </summary>
+            <param name="myDGV"></param>
+            <param name="Flag"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.AddCols(Class_类.DgvCol[],System.Windows.Forms.DataGridView,System.Boolean)">
+            <summary>
+            初始化 dataGridVew 各个列的信息
+            </summary>
+            <param name="aryDGVCol"></param>
+            <param name="srcDgv"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.InitDgvCol(System.Windows.Forms.DataGridView,Class_类.DgvCol[],System.Boolean)">
+            <summary>
+            初始化dgv
+            </summary>
+            <param name="srcDgv"></param>
+            <param name="aryCol"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.ToCsv(System.Windows.Forms.DataGridView,System.String)">
+            <summary>
+            将 dataGridView1 导出为Csv
+            </summary>
+            <param name="dataGridView1"></param>
+            <param name="FileHead"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.ImportInCsv(System.Windows.Forms.DataGridView)">
+            <summary>
+            从csv中导入数据到dgv
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.ImportToCsv___(System.Windows.Forms.DataGridView)">
+            <summary>
+            把dgv中的数据导出为csv
+            </summary>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.MoveUp(System.Windows.Forms.DataGridView)">
+            <summary>
+            上移一行
+            </summary>
+            <param name="dataGridView"></param>
+        </member>
+        <member name="M:Class_类.DgvHelper.MoveDown(System.Windows.Forms.DataGridView)">
+            <summary>
+            下移一行
+            </summary>
+            <param name="dataGridView"></param>
+        </member>
+        <member name="P:Class_类.DgvCol.See">
+            <summary>
+            是否可见
+            </summary>
+        </member>
+        <member name="P:Class_类.DgvCol.Read">
+            <summary>
+            是否只读
+            </summary>
+        </member>
+        <member name="P:Class_类.DgvCol.Width">
+            <summary>
+            设置列宽
+            </summary>
+        </member>
+        <member name="P:Class_类.DgvCol.ColName">
+            <summary>
+            列的名称
+            </summary>
+        </member>
+        <member name="P:Class_类.DgvCol.ColTitle">
+            <summary>
+            列的标题
+            </summary>
+        </member>
+        <member name="P:Class_类.DgvCol.DBAName">
+            <summary>
+            列的DataPropertyName
+            </summary>
+        </member>
+        <member name="F:Class_类.DgvCol.DgvType">
+            <summary>
+            列的类型
+            </summary>
+        </member>
+        <member name="T:Class_类.DateTimeHelper">
+            <summary>
+            用于处理日期时间的帮助类
+            </summary>
+        </member>
+        <member name="M:Class_类.DateTimeHelper.ConvertToLocalTime(System.Int64)">
+            <summary>
+            将时间戳转换为本地时间
+            </summary>
+            <param name="timestamp">时间戳</param>
+            <returns>本地时间</returns>
+        </member>
+        <member name="M:Class_类.DateTimeHelper.ConvertToTimestamp(System.DateTime)">
+            <summary>
+            将本地时间转换为时间戳
+            </summary>
+            <param name="dateTime">本地时间</param>
+            <returns>时间戳</returns>
+        </member>
+        <member name="M:Class_类.HttpRequestHelper.Get(System.String)">
+            <summary>
+            发送 GET 请求并获取响应数据
+            </summary>
+            <param name="url">请求 URL</param>
+            <returns>响应数据</returns>
+        </member>
+        <member name="M:Class_类.HttpRequestHelper.Post(System.String,System.String)">
+            <summary>
+            发送 POST 请求并获取响应数据
+            </summary>
+            <param name="url">请求 URL</param>
+            <param name="data">JSON 字符串</param>
+            <returns>响应数据</returns>
+        </member>
+        <member name="M:Class_类.JsonHelper.Serialize(System.Object)">
+            <summary>
+            将对象序列化为 JSON 字符串
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.JsonHelper.Deserialize``1(System.String)">
+            <summary>
+            将 JSON 字符串反序列化为对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="json"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Class_类.FileHelper">
+            <summary>
+            文件操作类
+            </summary>
+        </member>
+        <member name="M:Class_类.FileHelper.GetFilePath(System.String)">
+            <summary>
+            获取当前目录下文件路径
+            </summary>
+            <param name="fileName">文件名</param>
+            <returns>文件路径</returns>
+        </member>
+        <member name="M:Class_类.FileHelper.CreateDirectory(System.String)">
+            <summary>
+            创建目录（如果目录不存在）
+            </summary>
+            <param name="path">目录路径</param>
+        </member>
+        <member name="M:Class_类.FileHelper.Read(System.String)">
+            <summary>
+            读取文件：用于读取文件内容，接受一个文件路径作为输入，返回文件内容的字符串表示。
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.FileHelper.Write(System.String,System.String)">
+            <summary>
+            写入文件：用于写入文件内容，接受一个文件路径和文件内容作为输入，将内容写入指定的文件中。
+            </summary>
+            <param name="path"></param>
+            <param name="content"></param>
+        </member>
+        <member name="M:Class_类.FileHelper.Copy(System.String,System.String)">
+            <summary>
+            复制文件：用于复制文件，接受一个源文件路径和目标文件路径作为输入，将源文件复制到指定的目标路径下。
+            </summary>
+            <param name="sourcePath"></param>
+            <param name="destinationPath"></param>
+        </member>
+        <member name="M:Class_类.FileHelper.Delete(System.String)">
+            <summary>
+            删除文件：用于删除文件，接受一个文件路径作为输入，删除指定的文件。
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Class_类.FileHelper.Move(System.String,System.String)">
+            <summary>
+            移动文件
+            </summary>
+            <param name="sourceFilePath"></param>
+            <param name="destinationFilePath"></param>
+        </member>
+        <member name="M:Class_类.FileHelper.ReadTextFile(System.String)">
+            <summary>
+            读取指定路径的文本文件
+            </summary>
+            <param name="path">文件路径</param>
+            <returns>文件内容</returns>
+        </member>
+        <member name="M:Class_类.FileHelper.WriteTextFile(System.String,System.String)">
+            <summary>
+            写入文本文件
+            </summary>
+            <param name="path">文件路径</param>
+            <param name="content">文件内容</param>
+        </member>
+        <member name="M:Class_类.FileHelper.ReadBinaryFile(System.String)">
+            <summary>
+            读取二进制文件
+            </summary>
+            <param name="path">文件路径</param>
+            <returns>byte[] 数组</returns>
+        </member>
+        <member name="M:Class_类.FileHelper.WriteBinaryFile(System.String,System.Byte[])">
+            <summary>
+            写入二进制文件
+            </summary>
+            <param name="path">文件路径</param>
+            <param name="bytes">byte[] 数组</param>
+        </member>
+        <member name="T:Class_类.StringHelper">
+            <summary>
+            用于处理字符串的帮助类
+            </summary>
+        </member>
+        <member name="M:Class_类.StringHelper.ConvertToBytes(System.String,System.Text.Encoding)">
+            <summary>
+            将字符串转换为 byte[] 数组
+            </summary>
+            <param name="str">字符串</param>
+            <param name="encoding">编码方式</param>
+            <returns>byte[] 数组</returns>
+        </member>
+        <member name="M:Class_类.StringHelper.ConvertToString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            将 byte[] 数组转换为字符串
+            </summary>
+            <param name="bytes">byte[] 数组</param>
+            <param name="encoding">编码方式</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:Class_类.StringHelper.Md5Encrypt(System.String)">
+            <summary>
+            将字符串进行 MD5 加密
+            </summary>
+            <param name="str">要加密的字符串</param>
+            <returns>加密后的字符串</returns>
+        </member>
+        <member name="M:Class_类.XmlHelper.LoadXml(System.String)">
+            <summary>
+            加载指定路径的 XML 文件，并返回一个 XmlDocument 对象。
+            </summary>
+            <param name="xmlFilePath">XML 文件路径。</param>
+            <returns>XmlDocument 对象。</returns>
+        </member>
+        <member name="M:Class_类.XmlHelper.SaveXml(System.Xml.XmlDocument,System.String)">
+            <summary>
+            将 XmlDocument 对象保存到指定的 XML 文件。
+            </summary>
+            <param name="xml">XmlDocument 对象。</param>
+            <param name="xmlFilePath">XML 文件路径。</param>
+        </member>
+        <member name="M:Class_类.XmlHelper.GetXmlNode(System.Xml.XmlDocument,System.String)">
+            <summary>
+            根据 XPath 表达式获取一个 XmlNode 对象。
+            </summary>
+            <param name="xml">XmlDocument 对象。</param>
+            <param name="xpath">XPath 表达式。</param>
+            <returns>XmlNode 对象。</returns>
+        </member>
+        <member name="M:Class_类.XmlHelper.GetXmlNodes(System.Xml.XmlDocument,System.String)">
+            <summary>
+            根据 XPath 表达式获取一组 XmlNode 对象。
+            </summary>
+            <param name="xml">XmlDocument 对象。</param>
+            <param name="xpath">XPath 表达式。</param>
+            <returns>XmlNodeList 对象。</returns>
+        </member>
+        <member name="M:Class_类.XmlHelper.CreateXmlFile(System.String,System.String)">
+            <summary>
+            创建xml文件
+            </summary>
+            <param name="path"></param>
+            <param name="rootElementName"></param>
+        </member>
+        <member name="M:Class_类.XmlHelper.AddXmlElement(System.String,System.String,System.String)">
+            <summary>
+            添加元素
+            </summary>
+            <param name="path"></param>
+            <param name="elementName"></param>
+            <param name="elementValue"></param>
+        </member>
+        <member name="M:Class_类.XmlHelper.GetXmlElementValue(System.String,System.String)">
+            <summary>
+            获取元素的值
+            </summary>
+            <param name="path"></param>
+            <param name="elementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.XmlHelper.UpdateXmlElementValue(System.String,System.String,System.String)">
+            <summary>
+            修改元素的值
+            </summary>
+            <param name="path"></param>
+            <param name="elementName"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:Class_类.MD5Helper.Encrypt(System.String)">
+            <summary>
+            生成 MD5 值，用于生成 MD5 值，接受一个字符串作为输入，返回一个经过 MD5 加密的字符串。
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MD5Helper.Validate(System.String,System.String)">
+            <summary>
+            验证 MD5 值，用于验证 MD5 值，接受一个字符串和一个 MD5 值作为输入，返回一个 bool 类型的值，表示输入字符串是否与 MD5 值匹配。
+            </summary>
+            <param name="input"></param>
+            <param name="hash"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MD5Helper.Compare(System.String,System.String)">
+            <summary>
+            比较两个字符串是否相等；用于比较两个字符串是否相等，接受两个字符串作为输入，返回一个 bool 类型的值，表示两个字符串是否相等。
+            </summary>
+            <param name="input1"></param>
+            <param name="input2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Class_类.MathHepler">
+            <summary>
+            坐标转换等换算
+            </summary>
+        </member>
+        <member name="M:Class_类.MathHepler.TransPoints(System.Drawing.PointF,System.Collections.Generic.List{System.Drawing.PointF},System.Single,System.Drawing.PointF)">
+            <summary>
+            将路径列表转化新的坐标系中去
+            </summary>
+            <param name="basePt">模板的基点坐标值</param>
+            <param name="baseCoords">模板的路径列表</param>
+            <param name="diffAng">旋转量角度（360度制）（从0-360度，逆时针方向为正）</param>
+            <param name="newPt">新的基点坐标值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.TransPoints2(System.Drawing.PointF,System.Collections.Generic.List{System.Drawing.PointF},System.Double,System.Drawing.PointF)">
+            <summary>
+            将路径列表转化新的坐标系中去（这个函数还需要再多做验证）
+            </summary>
+            <param name="basePt">模板的基点坐标值</param>
+            <param name="baseCoords">模板的路径列表</param>
+            <param name="diffAng">旋转量角度（360度制）（从0-360度，逆时针方向为正，顺时针方向为负）</param>
+            <param name="newPt">新的基点坐标值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.Rotate1(System.Drawing.PointF,System.Drawing.PointF,System.Double)">
+            <summary>
+            <para> 圆心Sin/Cos </para>
+            得到旋转后的B点的坐标值（ptCir为圆心坐标，ptA为要旋转的点坐标，ang为要旋转的角度（从0-360度，逆时针方向为正，顺时针方向为负））
+            </summary>
+            <param name="ptCenter">圆心坐标</param>
+            <param name="ptA">要旋转的点坐标</param>
+            <param name="degAng">角度（360度制）（从0-360度，逆时针方向为正，顺时针方向为负）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.Rotate2(System.Drawing.PointF,System.Drawing.PointF,System.Double)">
+            <summary>
+            <para> 网上算法Sin/Cos </para>
+            得到旋转后的B点的坐标值（ptCir为圆心坐标，ptA为要旋转的点坐标，ang为要旋转的角度（从0-360度，逆时针方向为正，顺时针方向为负））
+            </summary>
+            <param name="ptCenter">圆心坐标</param>
+            <param name="ptA">要旋转的点坐标</param>
+            <param name="degAng">角度（360度制）（从0-360度，逆时针方向为正，顺时针方向为负）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.Rotate3(System.Drawing.PointF,System.Drawing.PointF,System.Double)">
+            <summary>
+            <para> Matrix计算 </para>
+            得到旋转后的B点的坐标值（ptCir为圆心坐标，ptA为要旋转的点坐标，ang为要旋转的角度（从0-360度，逆时针方向为正，顺时针方向为负））
+            </summary>
+            <param name="ptCenter">圆心坐标</param>
+            <param name="ptA">要旋转的点坐标</param>
+            <param name="degAng">角度（360度制）（从0-360度，逆时针方向为正，顺时针方向为负）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.Polar(System.Drawing.PointF,System.Double,System.Double)">
+            <summary>
+            以ptCenter为圆心，以radius为半径，以ang为角度（角度制），得到极坐标的值（从0-360度，逆时针方向为正，顺时针方向为负）
+            </summary>
+            <param name="ptCenter">圆心坐标</param>
+            <param name="radius">半径</param>
+            <param name="degAng">角度（360度制）（从0-360度，逆时针方向为正，顺时针方向为负）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.GetDist(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            得到A点与B点之间的距离
+            </summary>
+            <param name="PtA"></param>
+            <param name="PtB"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.GetAngle_A_B(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            得到B点到A点的角度(返回0到 360的角度)（相当于A点为零点，B点为相对点）
+            </summary>
+            <param name="PtA">A点为零点</param>
+            <param name="PtB">B点为相对点</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.GetAngle_A_B_1_4(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            得到直线的角度(返回 -89.99999到 90.0000 的角度)（第一象限和第四象限）
+            </summary>
+            <param name="PtA"></param>
+            <param name="PtB"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.BesureAngle_360(System.Double@)">
+            <summary> 保证角度在0-360度 </summary> 
+        </member>
+        <member name="M:Class_类.MathHepler.BesureAngle_1_4(System.Double@)">
+            <summary> (保证角度在 -89.99999到 90.0000 的角度)（第一象限和第四象限）</summary> 
+        </member>
+        <member name="M:Class_类.MathHepler.GetCircleInfo(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF@,System.Single@)">
+            <summary>
+            根据三点来计算圆心（用作三点画圆或三点画弧）
+            </summary>
+            <param name="pt0"></param>
+            <param name="pt1"></param>
+            <param name="pt2"></param>
+            <param name="ptCenter">圆心坐标</param>
+            <param name="radius">半径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.GetLine_k_b(System.Drawing.PointF,System.Drawing.PointF,System.Double@,System.Double@)">
+            <summary>
+            得到直线函数的k和b  (y=kx+b) （注意：这条线不能 垂直或水平线）
+            </summary>
+            <param name="pt1"></param>
+            <param name="pt2"></param>
+            <param name="k"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:Class_类.MathHepler.GetClockDir(System.Drawing.PointF[])">
+            <summary>
+            true表示顺时针，false表示逆时针（这个函数好像有问题，以好要慎用）
+            </summary>
+            <param name="pts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.GetClockDir(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            true表示顺时针，false表示逆时针，
+            </summary>
+            <param name="pt1"></param>
+            <param name="pt2"></param>
+            <param name="pt3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.IsSameLine(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            三点是否共线（true表示三点共线，false表示三点不共线）
+            </summary>
+            <param name="pt1"></param>
+            <param name="pt2"></param>
+            <param name="pt3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.SplitLine(System.Drawing.PointF,System.Drawing.PointF,System.Single)">
+            <summary>
+            将直线根据长度拆分成细分点集合
+            </summary>
+            <param name="ptStart">直线的起点</param>
+            <param name="ptEnd">直线的结束点</param>
+            <param name="aoi_gap">单段长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.SplitCircle(System.Drawing.PointF,System.Single,System.Single)">
+            <summary>
+            将圆根据长度拆分成细分点集合
+            </summary>
+            <param name="ptCenter">圆心坐标</param>
+            <param name="radius">半径</param>
+            <param name="aoi_gap">单段长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.SplitArc(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF,System.Single)">
+            <summary>
+            将圆弧根据长度拆分成细分点集合
+            </summary>
+            <param name="arcStart">圆弧的起点</param>
+            <param name="arcMid">圆弧的中间点</param>
+            <param name="arcEnd">圆弧的结束点</param>
+            <param name="aoi_gap"></param>
+            <returns>单段长度</returns>
+        </member>
+        <member name="M:Class_类.MathHepler.GetSizePts(System.Collections.Generic.List{System.Collections.Generic.List{System.Drawing.PointF}},System.Single,System.Single)">
+            <summary>
+            根据相机视野的大小将细分点集合拆分成相机检测
+            </summary>
+            <param name="allItemPts"></param>
+            <param name="sizeX"></param>
+            <param name="sizeY"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.MathHepler.CalMinMax(System.Collections.Generic.List{System.Drawing.PointF},System.Single@,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            得到点集合的 minX,maxX,minY,maxY四个极限值
+            </summary>
+            <param name="pts"></param>
+            <param name="minX"></param>
+            <param name="maxX"></param>
+            <param name="minY"></param>
+            <param name="maxY"></param>
+        </member>
+        <member name="M:Class_类.MathHepler.GetMidPt(System.Collections.Generic.List{System.Drawing.PointF})">
+            <summary>
+            得到点集合的中心点
+            </summary>
+            <param name="pts"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Class_类.NumHeler.NumHelper">
+            <summary>
+            数字操作
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Class_类.NumHeler.NumHelper.Max(System.Double[])" -->
+        <member name="M:Class_类.NumHeler.NumHelper.Min(System.Double[])">
+            <summary>
+            求一组数字中的最小值。
+            </summary>
+            <param name="values">一组数字。</param>
+            <returns>最小值。</returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.Average(System.Double[])">
+            <summary>
+            求一组数字的平均值。
+            </summary>
+            <param name="values">一组数字。</param>
+            <returns>平均值。</returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.Round(System.Double,System.Int32)">
+            <summary>
+            对一个数字进行四舍五入，保留指定位数的小数。
+            </summary>
+            <param name="value">要进行四舍五入的数字。</param>
+            <param name="decimals">保留的小数位数，默认为 0。</param>
+            <returns>四舍五入后的数字。</returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.FillNum(System.Windows.Forms.NumericUpDown,System.Decimal)">
+            <summary>
+            根据up-down最大最小判断输入数值是否在范围内
+            </summary>
+            <param name="Num"></param>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.SafeFillNum(System.Windows.Forms.NumericUpDown,System.Double)">
+            <summary>
+            根据up-down最大最小判断输入数值是否在范围内
+            </summary>
+            <param name="Num"></param>
+            <param name="dValue"></param>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.GetStringFromList``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            将列表中的数据转换为字符串（  (1.23,4.56,7.89) 转换为 "1.23,4.56,7.89" ）
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="lstData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.CRC(System.Byte[],System.Byte@,System.Byte@)">
+            <summary>
+            返回CRC16校验码，注意 outLo在前，outHi在后
+            </summary>
+            <param name="aryBytes"></param>
+            <param name="outLo"></param>
+            <param name="outHi"></param>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.StrToInt(System.String)">
+            <summary>
+            字符串转换为整数
+            </summary>
+            <param name="sValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.StrToInt(System.String,System.Int32)">
+            <summary>
+            字符串转换为整数
+            </summary>
+            <param name="sValue"></param>
+            <param name="iDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.StrToDouble(System.String)">
+            <summary>
+            字符串转换为实数
+            </summary>
+            <param name="sValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.StrToDouble(System.String,System.Double)">
+            <summary>
+            字符串转换为实数
+            </summary>
+            <param name="sValue"></param>
+            <param name="dbDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.StrToBool(System.String)">
+            <summary>
+            字符串转换为布尔值
+            </summary>
+            <param name="sValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.NumHeler.NumHelper.StrToBool(System.String,System.Boolean)">
+            <summary>
+            字符串转换为布尔值
+            </summary>
+            <param name="sValue"></param>
+            <param name="bDefault"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Class_类.SQLHelper">
+            <summary>
+            通用数据访问类，连接字符串写App.config文件下的ConnectionStrings
+            </summary>
+        </member>
+        <member name="M:Class_类.SQLHelper.GetSingleResult(System.String)">
+            <summary>
+            返回一行一列结果的方法
+            </summary>
+            <param name="commStr">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.SQLHelper.GetSingleResult(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一行一列结果的方法
+            </summary>
+            <param name="commStr">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.SQLHelper.Update(System.String)">
+            <summary>
+            更新操作（insert，update，delete），返回受影响的行数
+            </summary>
+            <param name="commStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.SQLHelper.Update(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            更新操作（insert，update，delete），返回受影响的行数
+            </summary>
+            <param name="commStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.SQLHelper.GetReader(System.String)">
+            <summary>
+            返回一个结果集，后面写关闭reader
+            </summary>
+            <param name="commStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.SQLHelper.GetReader(System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            返回一个结果集，后面写关闭reader
+            </summary>
+            <param name="commStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Class_类.SQLHelper.GetDataTable(System.String)">
+            <summary>
+            得到datatable
+            </summary>
+            <param name="sql"></param>
+            <returns>DataTable</returns>
+        </member>
+    </members>
+</doc>
