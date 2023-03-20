@@ -724,5 +724,25 @@
             <param name="sql"></param>
             <returns>DataTable</returns>
         </member>
+        <member name="F:Vision.Vision.myJobManager">
+            <summary>
+            定义
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.init(System.String,Cognex.VisionPro.CogRecordDisplay)" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.updateDisplaySource(Cognex.VisionPro.CogRecordDisplay)" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.clearDispalySource" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.setImage(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.setImage(System.Drawing.Bitmap)" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.GetImage(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.GetResult(Vision.Vision.Result@)" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.Run(System.String,Vision.Vision.Result@,System.Int32)" -->
+        <member name="M:Vision.Vision.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.Stop" -->
+        <!-- Badly formed XML comment ignored for member "M:Vision.Vision.SetColorMapPreDefined(System.String)" -->
     </members>
 </doc>

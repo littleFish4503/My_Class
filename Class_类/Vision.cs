@@ -6,7 +6,7 @@ using Cognex.VisionPro;
 using Cognex.VisionPro.ToolGroup;
 using Cognex.VisionPro.ImageFile;
 
-namespace VisionProAPI
+namespace Vision
 {
     public class Vision
     {
@@ -37,7 +37,7 @@ namespace VisionProAPI
         /// <param name="cogRecordDisplayin">< VisionPro显示控件句柄 ></param>
         ///
         /// <returns>< bool判定是否初始化成功 ></returns>
-        public bool init(string vpppath,CogRecordDisplay cogRecordDisplayin = null)
+        public bool init(string vpppath, CogRecordDisplay cogRecordDisplayin = null)
         {
             updateDisplaySource(cogRecordDisplayin);
             if (null == vpppath)
@@ -58,7 +58,7 @@ namespace VisionProAPI
             catch
             {
                 return false;
-            }          
+            }
         }
         #endregion
         #region updateDisplaySource and clearDispalySource
@@ -106,11 +106,11 @@ namespace VisionProAPI
         /// <returns>< bool判定是否设置成功 ></returns>
         public bool setImage(string pathin = null)
         {
-            if(null != cogRecordDisplay)
+            if (null != cogRecordDisplay)
             {
-                if(null != pathin)
+                if (null != pathin)
                 {
-                    if(System.IO.File.Exists(pathin))
+                    if (System.IO.File.Exists(pathin))
                     {
                         Imagein = new Bitmap(pathin);
                         cogRecordDisplay.Image = new CogImage8Grey(Imagein);
@@ -139,11 +139,11 @@ namespace VisionProAPI
         /// <returns>< bool判定是否设置成功 ></returns>
         public bool setImage(Bitmap bitmap)
         {
-            if(null != cogRecordDisplay)
+            if (null != cogRecordDisplay)
             {
-                if(null != bitmap)
+                if (null != bitmap)
                 {
-                    if(null != Imagein)
+                    if (null != Imagein)
                     {
                         Imagein = bitmap;
                         cogRecordDisplay.Image = new CogImage8Grey(bitmap);
@@ -187,9 +187,9 @@ namespace VisionProAPI
                 step1 = false;
             }
             try
-            {   
+            {
                 mIFTool = (CogImageFileTool)(mTGTool.Tools["CogImageFileTool1"]);
-                mIFTool.Operator.Open(pathin, CogImageFileModeConstants.Read); 
+                mIFTool.Operator.Open(pathin, CogImageFileModeConstants.Read);
                 step2 = true;
             }
             catch
@@ -206,9 +206,9 @@ namespace VisionProAPI
             {
                 step3 = false;
             }
-            if(step1 && step2 && step3)
+            if (step1 && step2 && step3)
             {
-                return true; 
+                return true;
             }
             else
             {
@@ -298,7 +298,7 @@ namespace VisionProAPI
             {
                 IsDispaly = false;
             }
-            if(IsResult1 && IsResult2 && IsResult3 && IsDispaly)
+            if (IsResult1 && IsResult2 && IsResult3 && IsDispaly)
             {
                 return true;
             }
@@ -321,7 +321,7 @@ namespace VisionProAPI
         public string Run(string _pathin, ref Result result, int time = 500)
         {
             Stop();
-            if(GetImage(_pathin))
+            if (GetImage(_pathin))
             {
                 try
                 {
@@ -332,7 +332,7 @@ namespace VisionProAPI
                 {
                     return "Error: JobManager run fail.";
                 }
-                if(GetResult(ref result))
+                if (GetResult(ref result))
                 {
                     Stop();
                     return "Success!";
@@ -406,13 +406,13 @@ namespace VisionProAPI
         /// <returns>< bool判定是否显示成功 ></returns>
         public bool SetColorMapPreDefined(string type)
         {
-            if(null == type)
+            if (null == type)
             {
                 return false;
             }
             else
             {
-                switch(type)
+                switch (type)
                 {
                     case "None":
                         cogRecordDisplay.ColorMapPredefined = Cognex.VisionPro.Display.CogDisplayColorMapPredefinedConstants.None;
